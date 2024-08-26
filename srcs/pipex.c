@@ -6,7 +6,7 @@
 /*   By: oabdelka <oabdelka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/22 20:18:29 by oabdelka          #+#    #+#             */
-/*   Updated: 2024/08/22 20:18:31 by oabdelka         ###   ########.fr       */
+/*   Updated: 2024/08/26 19:08:01 by oabdelka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,8 @@ int	main(int argc, char **argv, char **envp)
 
 	if (argc == 5)
 	{
+		if (argv[2][0] == '\0' || argv[3][0] == '\0')
+			error();
 		if (pipe(fd) == -1)
 			error();
 		pid = fork();

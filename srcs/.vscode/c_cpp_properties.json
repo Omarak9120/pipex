@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**", // Include everything in the workspace
+                "${workspaceFolder}/includes", // Include headers
+                "${workspaceFolder}/libft", // Include the libft directory
+                "${workspaceFolder}/srcs" // Include source files
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}
